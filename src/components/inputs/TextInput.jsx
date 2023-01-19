@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 /*
 
@@ -21,7 +20,7 @@ import { useState } from "react";
 
 ?   label       ---------> // This is going to be an Object {class: "", title: ""} Since in this component label is used as the placeholder it is required to send a label along with the ID as mentioned above
 */
-const VbTextInput = ({
+const TextInput = ({
   type,
   validationMessage,
   disabled,
@@ -31,7 +30,7 @@ const VbTextInput = ({
   validated, // this is to be TRUE when your validations satisfied || // this should return true || false to get the validation classes to apply
   required, // if TRUE validation error class will be give by default || // this should be true if the field must be filed, if its optional it should be false
   onChangeFunc,
-  onBlurFunc,
+  onBlurFunc
 }) => {
   const [value, setOnchangeValue] = useState("");
 
@@ -123,4 +122,4 @@ const VbTextInput = ({
     </div>
   );
 };
-export default VbTextInput;
+export default TextInput;

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import VbTextInput from "../inputs/TextInput.jsx";
 import VbPhoneNumberInput from "../inputs/PhoneNumber.jsx";
+import VbTextInput from "../inputs/TextInput.jsx";
 // import VbDropdown from "../inputs/SingleSelect.jsx";
 // import VbMultiSelect from "../inputs/MultiOptions.jsx";
 
@@ -91,7 +91,7 @@ const NoValidationForm = ({ munis }) => {
               id={"home-phoneNovalidation"} //id is used as input ID and label FOR -- THIS SHOULD BE UNIQ
               label={{
                 class: "",
-                title: "Home phone",
+                // title: "Home phone",
               }}
               onChangeFunc={(value) => {
                 // here it is only receiving the value not the event

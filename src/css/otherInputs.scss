@@ -1,10 +1,10 @@
+$ok-fail-color: orange;
 .new-input{
     font-size: 15px;
     display: block;
     position:relative; 
     margin: 25px 0px 0px;
     width: 100%;
-    // min-height: 50px;
     &.ok-check{
         &:after {
             position: absolute;
@@ -40,7 +40,7 @@
         top: 22px;
         left: 15px;
         transform: translateY(-50%);
-        color: gray;
+        color: #A4ABE0;
         transition:0.4s ease all; 
         -moz-transition:0.4s ease all; 
         -webkit-transition:0.4s ease all;
@@ -65,7 +65,7 @@
         padding-right: 30px !important;
         -webkit-border-radius: 3px;
         border-radius: 3px;
-        background-color: white;
+        background-color: white;;
         border: 1px rgba(49, 49, 48, 0.2) solid;
         &.ok-check{
             border-color: green;
@@ -75,8 +75,8 @@
             border-bottom: 2.5px solid green;
         }
         &.ok-failed {
-            border-color:orange;
-            border-bottom: 2.5px solid orange;
+            border-color:$ok-fail-color;
+            border-bottom: 2.5px solid $ok-fail-color;
         }
       }
       input:focus + label, input:not(:placeholder-shown) + label {
@@ -92,7 +92,7 @@
         position: absolute !important;
         right:11px;
         margin-top: 35px;
-        color:#999;
+        color:#A4ABE0;
         font-size:13px;
         // transform: translateY(0%);
         transition: 300ms;
@@ -185,8 +185,8 @@
             border-color: green;
         }
         &.ok-failed {
-            border-color:orange;
-            border-bottom: 2.5px solid orange;
+            border-color:$ok-fail-color;
+            border-bottom: 2.5px solid $ok-fail-color;
         }
         
     }
@@ -415,8 +415,8 @@
             border-bottom-right-radius: 0;
         }
         &.ok-failed {
-            border-color:orange;
-            border-bottom: 2.5px solid orange;
+            border-color:$ok-fail-color;
+            border-bottom: 2.5px solid $ok-fail-color;
         }
         &.ok-check{
             position: relative;
@@ -458,8 +458,8 @@
             border-top-right-radius: 0;
         }
         &.ok-failed {
-            border-color:orange;
-            border-bottom: 2.5px solid orange;
+            border-color:$ok-fail-color;
+            border-bottom: 2.5px solid $ok-fail-color;
             border-top: 0;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
@@ -491,7 +491,7 @@
          }
    }
    &.ok-failed {
-        border-color:orange;
-        border-bottom: 2.5px solid orange;
+        border-color:$ok-fail-color;
+        border-bottom: 2.5px solid $ok-fail-color;
     }
 }
